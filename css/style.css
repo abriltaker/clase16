@@ -1,0 +1,128 @@
+body {
+  padding-top: 6em; }
+
+nav {
+  background-color: #F7B1AB; }
+  nav ul {
+    list-style: none; }
+  nav li {
+    padding-right: 1em;
+    font-family: Roboto; }
+    nav li a {
+      color: black;
+      text-decoration: none; }
+      nav li a:hover {
+        color: yellow;
+        text-decoration: none; }
+  nav .nav__logo {
+    height: 50px;
+    margin-right: 1em; }
+  nav .redes {
+    height: 20px;
+    margin-right: 1em; }
+  @media screen and (min-width: 1024px) {
+    nav .navbar-toggler {
+      display: none !important; } }
+  @media screen and (max-width: 720px) {
+    nav .navList {
+      display: none !important; }
+    nav .navbar-toggler {
+      display: block !important;
+      background-color: #F7B1AB; } }
+
+footer {
+  background-color: #F7B1AB; }
+  footer .footer__logo {
+    height: 50px;
+    margin-right: 1em; }
+  footer .footer__link {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    color: black;
+    text-decoration: none; }
+    footer .footer__link:hover {
+      color: yellow;
+      text-decoration: none; }
+  footer .redes {
+    height: 20px;
+    margin-right: 1em; }
+
+.btn-primary:focus {
+  background-color: #ffd131 !important;
+  border-color: #F7B1AB !important;
+  box-shadow: none !important; }
+
+section .section__title {
+  color: #A44A3F; }
+
+#SoyAbril .SoyAbril__foto {
+  height: 250px; }
+
+@media screen and (max-width: 720px) {
+  #SoyAbril .SoyAbril__foto {
+    height: 200px; } }
+
+.skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+  .skills .skills__img {
+    height: 200px;
+    width: 200px; }
+
+.Sobremi__foto {
+  height: 300px; }
+
+.trabajos {
+  background-color: #ffd131;
+  padding: 1em;
+  margin: 1em auto; }
+  .trabajos .trabajos__title {
+    color: #A44A3F;
+    font-family: Roboto, sans-serif; }
+  .trabajos .trabajos__foto {
+    height: 300px; }
+
+.blog {
+  background-color: #F7B1AB;
+  padding: 1em;
+  margin: 1em auto; }
+  .blog .blog__img {
+    height: 100px;
+    margin-right: 2em; }
+  .blog .blog__title {
+    color: #A44A3F;
+    font-family: Roboto, sans-serif; }
+
+.article {
+  background-color: white;
+  margin: 1em auto; }
+  .article .article__img {
+    width: 500px; }
+
+.row {
+  animation-duration: 2s;
+  animation-name: aparecer2; }
+
+@keyframes aparecer2 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.card__search, .card__category {
+  background-color: #F7B1AB;
+  color: yellow; }
+
+.card__list .li-20px {
+  font-size: 20px; }
+
+.card__list .li-15px {
+  font-size: 15px; }
+
+.card__list .li-10px {
+  font-size: 10px; }
+
+.card__redes {
+  border: solid 1em #F7B1AB;
+  background-color: #ffd131; }
