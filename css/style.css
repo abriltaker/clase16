@@ -1,5 +1,5 @@
 body {
-  padding-top: 6em; }
+  padding-top: 5em; }
 
 nav {
   background-color: #F7B1AB; }
@@ -23,7 +23,7 @@ nav {
   @media screen and (min-width: 1024px) {
     nav .navbar-toggler {
       display: none !important; } }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 1023px) {
     nav .navList {
       display: none !important; }
     nav .navbar-toggler {
@@ -47,20 +47,73 @@ footer {
     height: 20px;
     margin-right: 1em; }
 
+.dark__container {
+  height: 90vh;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  background-image: url(../images/bg-violeta.svg);
+  backgroud-repeat: no-repeat;
+  background-position: center bottom; }
+  .dark__container .text-container .presentation {
+    color: #ffd131; }
+  @media screen and (min-width: 1024px) {
+    .dark__container .text-container {
+      padding: 200px; } }
+  @media screen and (max-width: 1023px) {
+    .dark__container .text-container {
+      padding-top: 100px; } }
+  @media screen and (min-width: 1024px) {
+    .dark__container {
+      background-size: 200% 200%; } }
+  @media screen and (max-width: 1023px) {
+    .dark__container {
+      background-size: 258% 104%; }
+      .dark__container .text-containter {
+        padding-top: 100px; } }
+
+/*.dark2__container{
+	height: 110vh;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	background-image: url(../images/bg-violeta-inv.svg);
+	backgroud-repeat: no-repeat;
+	background-position: center bottom;
+	@media screen and (min-width: $break-large) {
+    	background-size: 150% 100%;
+  	}
+	@media screen and (max-width: $break-small){
+		background-size: 230% 104%;
+	}
+}*/
 .btn-primary:focus {
   background-color: #ffd131 !important;
   border-color: #F7B1AB !important;
   box-shadow: none !important; }
 
 section .section__title {
-  color: #A44A3F; }
+  color: #5D4E60; }
 
-#SoyAbril .SoyAbril__foto {
-  height: 250px; }
-
-@media screen and (max-width: 720px) {
+#SoyAbril {
+  height: 90vh;
+  padding-top: 8em; }
+  #SoyAbril .SoyAbril__row {
+    background-color: #ffd131;
+    padding: 1em; }
   #SoyAbril .SoyAbril__foto {
-    height: 200px; } }
+    height: 250px; }
+  @media screen and (max-width: 1023px) {
+    #SoyAbril .SoyAbril__foto {
+      height: 200px; } }
+
+@media screen and (min-width: 1024px) {
+  .skills__container {
+    padding: 3em 0em 3em 0em; } }
+
+@media screen and (max-width: 1023px) {
+  .skills__container {
+    padding: 10em 0em 5em 0em; } }
 
 .skills {
   display: flex;
@@ -78,7 +131,7 @@ section .section__title {
   padding: 1em;
   margin: 1em auto; }
   .trabajos .trabajos__title {
-    color: #A44A3F;
+    color: #5D4E60;
     font-family: Roboto, sans-serif; }
   .trabajos .trabajos__foto {
     height: 300px; }
@@ -91,7 +144,7 @@ section .section__title {
     height: 100px;
     margin-right: 2em; }
   .blog .blog__title {
-    color: #A44A3F;
+    color: #5D4E60;
     font-family: Roboto, sans-serif; }
 
 .article {
@@ -122,7 +175,3 @@ section .section__title {
 
 .card__list .li-10px {
   font-size: 10px; }
-
-.card__redes {
-  border: solid 1em #F7B1AB;
-  background-color: #ffd131; }

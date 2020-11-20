@@ -2,7 +2,7 @@
 @import "sizes";
 
 body{
-	padding-top: 6em;
+	padding-top: 5em;
 }
 nav{
 	background-color:$darkPink;
@@ -65,6 +65,50 @@ footer{
 	margin-right: 1em;
 	}
 }
+.dark__container{
+	height: 90vh;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	background-image: url(../images/bg-violeta.svg);
+	backgroud-repeat: no-repeat;
+	background-position: center bottom;
+	.text-container{
+		.presentation{
+			color:$strongYellow;
+		}
+		@media screen and (min-width: $break-large) {
+			padding: 200px;
+		}
+		@media screen and (max-width: $break-small){
+    		padding-top: 100px;
+    	}
+	}
+	@media screen and (min-width: $break-large) {
+    	background-size: 200% 200%;
+  	}
+	@media screen and (max-width: $break-small){
+		background-size: 258% 104%;
+		.text-containter{
+    	padding-top: 100px;
+    	}
+	}
+}
+/*.dark2__container{
+	height: 110vh;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	background-image: url(../images/bg-violeta-inv.svg);
+	backgroud-repeat: no-repeat;
+	background-position: center bottom;
+	@media screen and (min-width: $break-large) {
+    	background-size: 150% 100%;
+  	}
+	@media screen and (max-width: $break-small){
+		background-size: 230% 104%;
+	}
+}*/
 .btn-primary:focus{
 	background-color:$strongYellow !important;
 	border-color:$darkPink !important;
@@ -72,21 +116,33 @@ footer{
 }
 section{
 	.section__title{
-		color:$autumnRed;
+		color:$lightViolet;
 	}
 }
 #SoyAbril{
+	height: 90vh;
+	padding-top: 8em;
+	.SoyAbril__row{
+	background-color: #ffd131;
+	padding: 1em;
+	}
 	.SoyAbril__foto{
 	height:$Dos+50px;
 	}
-
 	@media screen and (max-width: $break-small){
 		.SoyAbril__foto{
 		height:$Dos;
 		}
 	}
 }
-
+.skills__container{
+	@media screen and (min-width: $break-large) {
+    	padding: 3em 0em 3em 0em;
+  	}
+	@media screen and (max-width: $break-small){
+		padding: 10em 0em 5em 0em;
+	}
+}
 .skills{
 	display: flex;
 	flex-flow: row wrap;
@@ -104,7 +160,7 @@ section{
 	padding: 1em;
 	margin: 1em auto;
 	.trabajos__title{
-		color:$autumnRed;
+		color:$lightViolet;
 		font-family: Roboto, sans-serif;
 	}
 	.trabajos__foto{
@@ -120,7 +176,7 @@ section{
 		margin-right: 2em;
 	}
 	.blog__title{
-		color:$autumnRed;
+		color:$lightViolet;
 		font-family: Roboto, sans-serif;
 	}
 }
@@ -160,11 +216,4 @@ section{
 			font-size: $size;
 		}
 	}
-}
-.card__redes{
-	@mixin head($border, $background-color, $border-color){
-	border: $border $border-color;
-	background-color:$background-color;
-	}
-	@include head($border, $border-color, $background-color);
 }

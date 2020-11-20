@@ -8,9 +8,12 @@
 	<meta name="robot" content="index, follow">
 	<title>Abril Taker</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="bower_components/morphext.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="bower_components/morphext.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 <body>
 	<section>
@@ -46,26 +49,38 @@
 					</ul>
 				</div>
 			</nav>
-		</header>	
-		<section id="SoyAbril" class="container" style="background-color: #ffd131; padding: 1em">
+		</header>
+		<section class="dark__container container-lg-12">
 			<div class="row">
+				<div class="col-lg-12">
+					<div class="text-container" style="text-align: center">
+						<H1 class="presentation display-1"><strong>ABRIL TAKER</strong>
+						<br><span id="js-rotating" class="animate__animated morphext display-3">Redactora, Front-end, Fotografa, Marketing
+						</span>	
+						</H1>
+					</div>
+				</div>
+			</div>
+		</section>	
+		<section id="SoyAbril" class="container">
+			<div class="row SoyAbril__row">
 				<div class="col-md-6">
-					<h1 class="section__title" style="font-size: 2em;">HOLA, SOY ABRIL!</h1>
-					<p>Creadora de contenido freelance. Podes contar conmigo para crear los textos para tu emprendimiento personal o profesional y para crear las fotografias que postearas y todos amaran. O puedo crear tu pagina web para que todos la visiten y te llenes de guita. Conoce mas sobre mi haciendo click en el boton de abajo.</p>
+					<h2 class="section__title" style="font-size: 2em;">¡Hola, soy <strong>Abril</strong>!</h2>
+					<p>Creadora de contenido freelance. Podes contar conmigo para crear los textos para tu emprendimiento personal o profesional y para crear las fotografias que postearas y todos amaran. O puedo crear tu pagina web para que todos la visiten y medir las metricas para que te llenes de guita. Conoce mas sobre mi haciendo click en el boton de abajo.</p>
 				</div>
 				<div class="col-md-6">
 					<img class="SoyAbril__foto" src="images/profesional.jpg" alt="perfil profesional">
 				</div>	
 			</div>
-			<div class="row">
+			<div class="row SoyAbril__row">
 				<div class="col-md-12 text-star">	
 					<a class="btn btn-primary" href="pages/sobremi.html">SOBRE MI</a>
 				</div>
 			</div>	
 		</section>
-		<section class="container" style="padding: 3em 0em 1em 0em;">
+		<section class="skills__container container">
 			<div class="row">
-				<h2 class="col-lg-12 text-center section__title">Mis habilidades</h2>
+				<h2 class="col-lg-12 text-center section__title"><strong>Mis habilidades</strong></h2>
 				<div class="skills col-md-12 text-center">
 					<div class="skills__sub col-md-4">
 						<img class="skills__img" src="images/redaccioninicio.jpg" alt="redaccion">
@@ -87,9 +102,9 @@
 				</div>
 			</div>
 		</section>
-		<section class="container" style="padding: 1em 0em 2em 0em;">
+		<section class="container">
 			<div class="row">
-				<h2 class="col-lg-12 text-center section__title">Novedades</h2>
+				<h2 class="col-lg-12 text-center section__title"><strong>Novedades</strong></h2>
 				<div class="card-deck col-md-12 text-center" style="width: 50rem">
 					<div class="card col-lg-4">
 						<a href="pages/calltoaction.html">
@@ -144,5 +159,17 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
+<script src="bower_components/morphext.js"></script>
+<script>
+            $("#js-rotating").Morphext({
+                animation: "rotateIn",
+                separator:",",
+                speed: 1500,
+                complete: function () {
+                    console.log("This is called after a phrase is animated in! Current phrase index: " + this.index);
+                }
+            });
+        </script>
 </body>
 </html>
