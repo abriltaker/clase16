@@ -2,7 +2,8 @@
 @import "sizes";
 
 body{
-	padding-top: 5em;
+	padding-top: 4em;
+	font-family: Muli, Roboto, "Helvetica Neue";
 }
 nav{
 	background-color:$darkPink;
@@ -94,21 +95,6 @@ footer{
     	}
 	}
 }
-/*.dark2__container{
-	height: 110vh;
-	position: relative;
-	z-index: 2;
-	width: 100%;
-	background-image: url(../images/bg-violeta-inv.svg);
-	backgroud-repeat: no-repeat;
-	background-position: center bottom;
-	@media screen and (min-width: $break-large) {
-    	background-size: 150% 100%;
-  	}
-	@media screen and (max-width: $break-small){
-		background-size: 230% 104%;
-	}
-}*/
 .btn-primary:focus{
 	background-color:$strongYellow !important;
 	border-color:$darkPink !important;
@@ -120,15 +106,18 @@ section{
 	}
 }
 #SoyAbril{
-	height: 90vh;
 	padding-top: 8em;
 	.SoyAbril__row{
 	background-color: #ffd131;
 	padding: 1em;
 	}
 	.SoyAbril__foto{
-	height:$Dos+50px;
+	height:$Tres;
+	justify-content: center;
 	}
+	@media screen and (min-width: $break-large) {
+    	height: 80vh;
+  	}
 	@media screen and (max-width: $break-small){
 		.SoyAbril__foto{
 		height:$Dos;
@@ -137,7 +126,7 @@ section{
 }
 .skills__container{
 	@media screen and (min-width: $break-large) {
-    	padding: 3em 0em 3em 0em;
+    	padding: 1em 0em 5em 0em;
   	}
 	@media screen and (max-width: $break-small){
 		padding: 10em 0em 5em 0em;
@@ -147,13 +136,35 @@ section{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
+	align-items:center;
 	.skills__img{
 		height:$Dos;
 		width:$Dos;
 	}
 }
-.Sobremi__foto{
-	height:$Tres;
+.sobremi__container{
+	padding-left: 0px;
+}
+.novedades__container{
+	.card-deck__style{
+		padding-left: 10px;
+	}
+	.card__style{
+		border: 0px;
+		background-color:$strongYellow;
+		.card-img-top{
+			border-radius: 0.5em;
+			width: 100%;
+			height: auto;
+			padding: 0px;
+		}
+	}
+	@media screen and (min-width: $break-large) {
+    	padding: 1em 0em 5em 0em;
+  	}
+	@media screen and (max-width: $break-small){
+		padding: 10em 0em 5em 0em;
+	}
 }
 .trabajos{
 	background-color:$strongYellow;
@@ -168,16 +179,62 @@ section{
 	}
 }
 .blog{
-	background-color:$darkPink;
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
 	padding: 1em;
 	margin: 1em auto;
+	.blog__post{
+		padding-bottom: 2em;
+		background-color:$darkPink;
+		box-sizing:border-box;
+		.blog__post__modeling{
+			padding-left: 20px;
+			padding-right: 20px;
+			.post-category{
+				display: inline-block;
+				padding: 2px 10px;
+				border-radius: 4px;
+				letter-spacing: .2em;
+				font-weight: 700;
+				font-size: .5rem;
+				text-transform: uppercase;
+			}
+		}
+		.blog__post__meta{
+			font-size: 13px;
+			width: 100%;
+			display: block;
+		}
+		.text-left{
+			text-align: left;
+		}
+		.align-items-center{
+			align-items: center!important;
+		}
+		.clearfix:after{
+			display: block;
+			clear: both;
+			content: "";
+		}
+		p{
+			color:#666666;
+		}
+	}
 	.blog__img{
-		height:$Uno;
+		border-radius: 0.5rem;
+		max-width: 100%;
+    	height: auto;
 		margin-right: 2em;
 	}
 	.blog__title{
 		color:$lightViolet;
-		font-family: Roboto, sans-serif;
+		font-family: "Muli", "Helvetica Neue", Roboto, sans-serif;
+		font-size: 24px;
+		margin-botton: 30px;
+		font-weight: 700;
+		line-height: 1.5;
 	}
 }
 .article{
