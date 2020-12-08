@@ -72,6 +72,8 @@ footer{
 	position: relative;
 	z-index: 2;
 	width: 100%;
+	margin-right: 0px;
+  	margin-left: 0px;
 	background-image: url(../images/bg-violeta.svg);
 	backgroud-repeat: no-repeat;
 	background-position: center bottom;
@@ -84,14 +86,20 @@ footer{
 		}
 		@media screen and (max-width: $break-small){
     		padding-top: 100px;
-
+    		.display-2{
+				font-size: 4rem;
+			}
+			.display-4{
+				font-size: 2.5rem;
+			}
+			height: 80vh;
     	}
 	}
 	@media screen and (min-width: $break-large) {
     	background-size: 200% 200%;
   	}
 	@media screen and (max-width: $break-small){
-		background-size: 258% 104%;
+		background-size: 270% 160%;
 		.text-containter{
     	padding-top: 100px;
     	}
@@ -132,6 +140,7 @@ section{
 		.SoyAbril__foto{
 		height:$Dos;
 		}
+		padding-top: 4em;
 	}
 }
 .skills__container{
@@ -156,6 +165,15 @@ section{
 	}
 }
 .sobremi__container{
+	padding-left: 0px;
+	.sobremi__container__img{
+		@media screen and (min-width: $break-large) {
+    	padding-left: 0px;
+  		}
+		@media screen and (max-width: $break-small){
+		padding: 0px;
+		}
+	}
 	@media screen and (max-width: $break-small){
 		padding: 0em 0em 3em 0em;
 	}
@@ -166,12 +184,12 @@ section{
 	}
 	.card__style{
 		border: 0px;
+		padding: 0px;
 		background-color:$strongYellow;
 		.card-img-top{
 			border-radius: 0.5em;
 			width: 100%;
 			height: auto;
-			padding: 0px;
 		}
 	}
 	@media screen and (min-width: $break-large) {
@@ -264,6 +282,8 @@ section{
 .row{
 	animation-duration: 2s;
 	animation-name: aparecer2;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 @keyframes aparecer2{
 	0%{

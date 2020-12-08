@@ -54,6 +54,8 @@ footer {
   position: relative;
   z-index: 2;
   width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
   background-image: url(../images/bg-violeta.svg);
   backgroud-repeat: no-repeat;
   background-position: center bottom; }
@@ -64,13 +66,18 @@ footer {
       padding: 200px; } }
   @media screen and (max-width: 1023px) {
     .dark__container .text-container {
-      padding-top: 100px; } }
+      padding-top: 100px;
+      height: 80vh; }
+      .dark__container .text-container .display-2 {
+        font-size: 4rem; }
+      .dark__container .text-container .display-4 {
+        font-size: 2.5rem; } }
   @media screen and (min-width: 1024px) {
     .dark__container {
       background-size: 200% 200%; } }
   @media screen and (max-width: 1023px) {
     .dark__container {
-      background-size: 258% 104%; }
+      background-size: 270% 160%; }
       .dark__container .text-containter {
         padding-top: 100px; } }
 
@@ -100,8 +107,10 @@ section .section__title {
     #SoyAbril {
       height: 80vh; } }
   @media screen and (max-width: 1023px) {
-    #SoyAbril .SoyAbril__foto {
-      height: 200px; } }
+    #SoyAbril {
+      padding-top: 4em; }
+      #SoyAbril .SoyAbril__foto {
+        height: 200px; } }
 
 @media screen and (min-width: 1024px) {
   .skills__container {
@@ -122,21 +131,29 @@ section .section__title {
   .skills h5 {
     padding-top: 1em; }
 
-@media screen and (max-width: 1023px) {
-  .sobremi__container {
-    padding: 0em 0em 3em 0em; } }
+.sobremi__container {
+  padding-left: 0px; }
+  @media screen and (min-width: 1024px) {
+    .sobremi__container .sobremi__container__img {
+      padding-left: 0px; } }
+  @media screen and (max-width: 1023px) {
+    .sobremi__container .sobremi__container__img {
+      padding: 0px; } }
+  @media screen and (max-width: 1023px) {
+    .sobremi__container {
+      padding: 0em 0em 3em 0em; } }
 
 .novedades__container .card-deck__style {
   padding-left: 10px; }
 
 .novedades__container .card__style {
   border: 0px;
+  padding: 0px;
   background-color: #ffd131; }
   .novedades__container .card__style .card-img-top {
     border-radius: 0.5em;
     width: 100%;
-    height: auto;
-    padding: 0px; }
+    height: auto; }
 
 @media screen and (min-width: 1024px) {
   .novedades__container {
@@ -217,7 +234,9 @@ section .section__title {
 
 .row {
   animation-duration: 2s;
-  animation-name: aparecer2; }
+  animation-name: aparecer2;
+  margin-left: 0px;
+  margin-right: 0px; }
 
 @keyframes aparecer2 {
   0% {
